@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --bg: #070807;
-  --card: #1c241f;
-  --line: #4a5c50;
+  --bg: #06150e;
+  --card: #113326;
+  --line: #3eea8a;
   --text: #ffffff;
   --muted: #ffffff;
   --green: #3eea8a;
-  --green-dim: #123526;
+  --green-dim: #0d2a1c;
 }
 
 html,
@@ -97,19 +97,39 @@ textarea:focus {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #3a4a40;
+  border: 1px solid var(--green);
   border-radius: 10px;
-  background: transparent;
-  color: #ffffff;
+  background: #0d2a1c;
+  color: #3eea8a;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 11px 18px;
 }
 
 .card {
   background: var(--card);
-  border: 1px solid var(--line);
+  border: 1px solid var(--green);
   border-radius: 16px;
+}
+
+.home {
+  background:
+    radial-gradient(80% 50% at 0% 0%, rgba(62, 234, 138, 0.38), transparent 58%),
+    radial-gradient(60% 40% at 100% 15%, rgba(62, 234, 138, 0.22), transparent 52%),
+    linear-gradient(#082016, #06150e);
+}
+
+.home header {
+  background: #0d2a1c;
+  border-bottom: 2px solid var(--green);
+}
+
+.band {
+  background: #0d2a1c;
+}
+
+.band-green {
+  background: #123526;
 }
 
 .pill {
