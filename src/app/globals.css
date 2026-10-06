@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #070807;
+  --card: #1c241f;
+  --line: #4a5c50;
+  --text: #ffffff;
+  --muted: #ffffff;
+  --green: #3eea8a;
+  --green-dim: #123526;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: var(--bg);
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1.6;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+::selection {
+  background: #14532d;
+  color: #fff;
+}
+
+input:focus,
+button:focus-visible,
+textarea:focus {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+
+.eyebrow {
+  color: #7cffb3;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.display {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.muted {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.field {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #101411;
+  padding: 11px 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.field::placeholder {
+  color: #d5e0d8;
+  opacity: 1;
+}
+
+.field:focus {
+  border-color: var(--green);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: 10px;
+  background: var(--green);
+  color: #04140c;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 11px 18px;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #3a4a40;
+  border-radius: 10px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 11px 18px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pill-pass {
+  background: var(--green-dim);
+  color: var(--green);
+}
+
+.pill-fail {
+  background: #3a1518;
+  color: #fb7185;
+}
+
+.pill-blocked {
+  background: #3a2e12;
+  color: #fbbf24;
+}
